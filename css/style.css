@@ -5,12 +5,13 @@
 body{
     background-color: #262827;
     color: white;
+    font-family: "Open Sans", sans-serif;
 }
 
 
 /* change the background color */
 .navbar-custom {
-    background-color: #262827;
+    background-color: #1f2020;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
@@ -72,13 +73,12 @@ hr.style-two {
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-
     text-align: center;
 }
 
 .project-button:hover{
     background-color: #1eb871;
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 .photo {
@@ -97,13 +97,35 @@ hr.style-two {
     
   }
 
+  
   .icons:hover{
-    color: rgba(0, 0, 0, 0.5);
+    color: #1f2020;
+  }
+
+
+  #contact .icons:hover{
+    color: #1f2020;
+  }
+
+  #contact .icons{
+    margin: 0;
+    color: #1eb871;
+    
   }
 
   #contact{
     text-align: center;
     margin-bottom: 25px;
   }
+
+  h5{
+    margin-top: 15px;
+  }
+
+  .page-footer {
+	background-color: #1f2020;
+	box-shadow: 0px 7px 18px -1px rgba(0,0,0,0.71);
+}
+
 
 
