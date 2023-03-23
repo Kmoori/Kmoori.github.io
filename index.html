@@ -23,13 +23,14 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-custom navbar-expand-lg nav-bg">
+        <nav class="navbar navbar-custom navbar-expand-lg nav-bg fixed-top scrolling-navbar">
             <div class="container">
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav my-nav-color">
                         <a class="nav-link " aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#about-me">Bemutatkozás</a>
-                        <a class="nav-link" href="#references">Projektek</a>
+                        <a class="nav-link" href="#about-me">About</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#references">Projects</a>
                         <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
@@ -38,35 +39,29 @@
     </header>
 
     <main>
-        <section>
-            <div class=" bg-image ripple shadow-1-strong">
-                <img src="img/keyboard-g2b6b6f66d_1920.jpg" class="w-100 img-fluid" alt="Webshop" />
+        <section class="thumbnail" id="thumbnail">
+            <div class="overlay">
 
-                <div class="mask text-light d-flex justify-content-center flex-column text-center"
-                    style="background-color: rgba(0, 0, 0, 0.5)">
+                <img src="img/kerek.png" alt="Patrik" class="photo img-fluid">
 
-                    <img src="img/kerek.png" alt="Patrik" class="photo img-fluid">
+                <h1><i class="main">Patrik Bajári</i></h1>
+                <p>COMPUTER SCIENCE ENGINEER</p>
 
-                    <h1><i class="main">Patrik Bajári</i></h1>
-                    <p>COMPUTER SCIENCE ENGINEER</p>
-
-                    <div>
-                        <a href="https://www.linkedin.com/in/patrik-baj%C3%A1ri-330144264/" target="_blank"><i
-                                class="fab fa-linkedin fa-3x icons"></i></a>
-                        <a href="https://github.com/Kmoori" target="_blank"><i
-                                class="fab fa-github fa-3x icons"></i></a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bajari.patrik@gmail.com"
-                            target="_blank"><i class="far fa-envelope fa-3x icons"></i></a>
-                    </div>
-
-
+                <div>
+                    <a href="https://www.linkedin.com/in/patrik-baj%C3%A1ri-330144264/" target="_blank"><i
+                            class="fab fa-linkedin fa-3x icons"></i></a>
+                    <a href="https://github.com/Kmoori" target="_blank"><i class="fab fa-github fa-3x icons"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bajari.patrik@gmail.com" target="_blank"><i
+                            class="far fa-envelope fa-3x icons"></i></a>
                 </div>
             </div>
         </section>
-        <br>
-        <div class="container">
 
-            <section id="about-me">
+
+        <br>
+        <div class="container" id="about-me">
+
+            <section >
                 <div class="row">
                     <div class="col-12">
                         <h2 class="main">About me</h2>
@@ -84,7 +79,7 @@
                             publishing software like Aldus PageMaker including versions of Lorem Ipsum
                         </p>
                         <a href="Documents/Patrik_Bajári_CV.pdf" target="_blank"><button class="project-button"
-                                style="float:right;">DOWNLOAD CV</button></a>
+                                style="float:right;">Resume</button></a>
 
                     </div>
                 </div>
@@ -154,7 +149,8 @@
                             <p class="m-0">Unity, C#</p>
                             <br>
                             <a href="https://kmoor.itch.io/froggy-in-the-trap-castle" target="_blank"><button
-                                    type="button" class="project-button"><i class="fab fa-itch-io"></i> Play</button></a>
+                                    type="button" class="project-button"><i class="fab fa-itch-io"></i>
+                                    Play</button></a>
                         </div>
                     </div>
 
@@ -206,7 +202,7 @@
 
     <footer class="page-footer text-center font-small">
         <div class="footer-copyright py-3">
-            © <strong class="main">Készítette: Patrik Bajári</strong>
+            © <strong class="main">Built by Patrik Bajári</strong>
         </div>
 
     </footer>
