@@ -1,12 +1,16 @@
+*{
+    transition: all .3s linear;
+}
+
 body{
-    background-color: #131e2a;
-    padding-top: 65px; 
+    background-color: #262827;
     color: white;
 }
 
+
 /* change the background color */
 .navbar-custom {
-    background-color: #152130;
+    background-color: #262827;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
@@ -26,18 +30,8 @@ body{
     padding-bottom: 500px;
 }
 
-h3.first{
-    color: #35df90;
-}
-
-
 .main{
     color: #1eb871;
-}
-
-
-h3.difketto{
-    color: #168e56;
 }
 
 .my-image{
@@ -79,11 +73,37 @@ hr.style-two {
     padding-left: 20px;
     padding-right: 20px;
 
-    transition: all .3s linear;
+    text-align: center;
 }
 
 .project-button:hover{
     background-color: #1eb871;
     color: rgba(0, 0, 0, 0.5);
 }
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding-top: 0;
+    width: 50%;
+    max-width: 20rem;
+  }
+
+  .icons{
+    margin-left: 5px;
+    color: #1eb871;
+    
+  }
+
+  .icons:hover{
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  #contact{
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
 

@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrik Bajári</title>
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
     <!-- [SAJÁT] - CSS -->
@@ -20,29 +22,15 @@
 </head>
 
 <body>
-
-    <!-- 
-    <div class="bg-image" style="max-width: 100%;">
-        <img src="img/keyboard-g2b6b6f66d_1920.jpg" class="w-100" />
-        <div class="mask text-light d-flex justify-content-center flex-column text-center"
-            style="background-color: rgba(0, 0, 0, 0.5)">
-            
-            <p class="m-0">Hello! I'm</p>
-            <h1>Patrik Bajári</h1>
-            <p class="m-0">A Passionate programmer</p>
-        </div>
-    </div>
-        -->
-
     <header>
-        <nav class="navbar navbar-custom navbar-expand-lg nav-bg fixed-top">
+        <nav class="navbar navbar-custom navbar-expand-lg nav-bg">
             <div class="container">
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav my-nav-color">
                         <a class="nav-link " aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="#about-me">Bemutatkozás</a>
                         <a class="nav-link" href="#references">Projektek</a>
-                        <a class="nav-link" href="#contact">Elérhetőségek</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -50,12 +38,33 @@
     </header>
 
     <main>
+        <section>
+            <div class=" bg-image ripple shadow-1-strong">
+                <img src="img/keyboard-g2b6b6f66d_1920.jpg" class="w-100 img-fluid" alt="Webshop" />
+
+                <div class="mask text-light d-flex justify-content-center flex-column text-center"
+                    style="background-color: rgba(0, 0, 0, 0.5)">
+                    
+                    <img src="img/kerek.png" alt="Patrik" class="photo img-fluid">
+                    
+                    <h1><i class="main">Patrik Bajári</i></h1>
+                    <p>COMPUTER SCIENCE ENGINEER</p>
+
+                    <div>
+                        <a href="https://www.linkedin.com/in/patrik-baj%C3%A1ri-330144264/" target="_blank"><i class="fab fa-linkedin fa-3x icons"></i></a>
+                        <a href="https://github.com/Kmoori" target="_blank"><i class="fab fa-github fa-3x icons"></i></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
         <br>
         <div class="container">
             <section id="about-me">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="main">About me</h3>
+                        <h2 class="main">About me</h2>
                         <p style="padding: 0">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the
@@ -74,11 +83,10 @@
             </section>
 
             <hr class="style-two">
-            <br>
 
             <section id="references">
                 <div class="row">
-                    <h3 class="main"> Projects </h3>
+                    <h2 class="main">Projects</h2>
                 </div>
 
 
@@ -90,11 +98,11 @@
 
                         <div class="mask text-light d-flex justify-content-center flex-column text-center"
                             style="background-color: rgba(0, 0, 0, 0.5)">
-                            <h4><i class="fas fa-search-plus">Board Game Webshop</i></h4>
+                            <h4>Board Game Webshop</h4>
                             <p class="m-0">ASP.Net, C#, SQL, JS, HTML5, CSS, BOOTSTRAP</p>
                             <br>
                             <a href="https://github.com/Kmoori/Board-Game-Store" target="_blank"><button type="button"
-                                    class="project-button">Code</button></a>
+                                    class="project-button"><i class="fa fa-github"></i> Code</button></a>
                         </div>
                     </div>
 
@@ -108,7 +116,7 @@
                             <p class="m-0">Unity, C#, JSON, Vuforia, Relay</p>
                             <br>
                             <a href="https://github.com/Kmoori/Szakdolgozat" target="_blank"><button type="button"
-                                    class="project-button">Code</button></a>
+                                    class="project-button"><i class="fa fa-github"></i> Code</button></a>
                         </div>
                     </div>
 
@@ -159,15 +167,23 @@
 
             </section>
 
-            <br>
             <hr class="style-two">
-            <br>
 
-            <section id="contact">
-                <div class="row">
-                    <h3 class="main">Elérhetőségek</h3>
+            <section >
+                <div id="contact">
+                    <div class="row">
+                        <h2 class="main">Contacts</h2>
+                    </div>
+                    <div class="row">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bajari.patrik@gmail.com" target="_blank"><i class="far fa-envelope fa-3x icons"></i></a>
+                        <h5>EMAIL</h5>
+                    </div>
                 </div>
+
+
             </section>
+
+
 
         </div>
     </main>
