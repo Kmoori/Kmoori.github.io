@@ -1,0 +1,94 @@
+body{
+    background-color: #131e2a;
+    padding-top: 65px; 
+    color: white;
+}
+
+/* change the background color */
+.navbar-custom {
+    background-color: #152130;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+/* change the color of hovered links */
+.navbar-custom .nav-link:hover {
+    color: #1eb871;
+}
+
+.bg-img{
+    background-image: url("../img/keyboard-g2b6b6f66d_1920.jpg");
+
+    padding-bottom: 500px;
+}
+
+h3.first{
+    color: #35df90;
+}
+
+
+.main{
+    color: #1eb871;
+}
+
+
+h3.difketto{
+    color: #168e56;
+}
+
+.my-image{
+    padding-left: 66px;
+    width: auto;
+    height: 30%;
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), #1eb871, rgba(0, 0, 0, 0.75));
+}
+
+.project-bg-img{
+    border-radius: 25px;
+    max-width: 25rem;
+    margin: 5px;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.project-bg-img img{
+
+    height: 240px;
+    border-radius: 25px;
+    width: auto;
+}
+
+.project-button{
+    background-color: rgba(0, 0, 0,0);
+    font-size: 150%;
+    color: #1eb871;
+    border: 3px solid;
+    border-color: #1eb871;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.project-button:hover{
+    background-color: #1eb871;
+    color: rgba(0, 0, 0, 0.5);
+    border: 3px solid;
+    border-color: #1eb871;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
