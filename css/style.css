@@ -1,146 +1,181 @@
-*{
-    transition: all .3s linear;
+* {
+  transition: all .3s linear;
 }
 
-body{
-    background-color: #262827;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    padding-top: 60px;
+body {
+  background-color: #262827;
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
 
-/* change the background color */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 20px 100px;
+  z-index: 100000;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+header.sticky{
+  padding: 5px 100px;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+header.sticky ul li a{
+  color: white;
+}
+
+
 .navbar-custom {
-    background-color: #1f2020;
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  box-shadow: none;
+  transition: top 0.3s;
 }
 
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-    color: white;
-    font-size: 130%;
+  color: white;
+  font-size: 130%;
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
 }
 
 /* change the color of hovered links */
 .navbar-custom .nav-link:hover {
-    color: #1eb871;
+  color: #1eb871;
 }
 
-.thumbnail {
-	background: url("../img/keyboard-g2b6b6f66d_1920.jpg") center center no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	position: relative;
-	height: auto;
-	overflow: hidden;
+.banner {
+  background: url("../img/keyboard-g2b6b6f66d_1920.jpg") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  overflow: hidden;
 }
 
-.thumbnail .overlay {
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    padding: 80px;
+.banner .overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 80px;
 }
 
 
-.main{
-    color: #1eb871;
+.main {
+  color: #1eb871;
 }
 
-.my-image{
-    padding-left: 66px;
-    width: auto;
-    height: 30%;
+.my-image {
+  padding-left: 66px;
+  width: auto;
+  height: 30%;
 }
 
 hr.style-two {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), #1eb871, rgba(0, 0, 0, 0.75));
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), #1eb871, rgba(0, 0, 0, 0.75));
 }
 
-.project-bg-img{
-    border-radius: 25px;
-    max-width: 25rem;
-    margin: 5px;
-    margin-top: 50px;
-    padding: 0;
+.project-bg-img {
+  border-radius: 25px;
+  max-width: 25rem;
+  margin: 5px;
+  margin-top: 50px;
+  padding: 0;
 }
 
-.project-bg-img img{
+.project-bg-img img {
 
-    height: 240px;
-    border-radius: 25px;
-    width: auto;
+  height: 240px;
+  border-radius: 25px;
+  width: auto;
 }
 
-.project-button{
-    background-color: rgba(0, 0, 0,0);
-    font-size: 150%;
-    color: #1eb871;
-    border: 3px solid;
-    border-color: #1eb871;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
+.center{
+  justify-content: center;
 }
 
-.project-button:hover{
-    background-color: #1eb871;
-    color: white;
+.project-button {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 150%;
+  color: #1eb871;
+  border: 3px solid;
+  border-color: #1eb871;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.project-button:hover {
+  background-color: #1eb871;
+  color: white;
 }
 
 .photo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    padding-top: 0;
-    width: 50%;
-    max-width: 20rem;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  width: 50%;
+  max-width: 20rem;
+}
 
-  .icons{
-    margin-left: 5px;
-    color: #1eb871;
-    
-  }
-
-  
-  .icons:hover{
-    color: #1f2020;
-  }
-
-
-  #contact .icons:hover{
-    color: #1f2020;
-  }
-
-  #contact .icons{
-    margin: 0;
-    color: #1eb871;
-    
-  }
-
-  #contact{
-    text-align: center;
-    margin-bottom: 25px;
-  }
-
-  h5{
-    margin-top: 15px;
-  }
-
-  .page-footer {
-	background-color: #1f2020;
-	box-shadow: 0px 7px 18px -1px rgba(0,0,0,0.71);
+.icons {
+  margin-left: 5px;
+  color: #1eb871;
 }
 
 
+.icons:hover {
+  color: #1f2020;
+}
 
+
+#contact .icons:hover {
+  color: #1f2020;
+}
+
+#contact .icons {
+  margin: 0;
+  color: #1eb871;
+
+}
+
+#contact {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h5 {
+  margin-top: 15px;
+}
+
+.page-footer {
+  background-color: #1f2020;
+  box-shadow: 0px 7px 18px -1px rgba(0, 0, 0, 0.71);
+}
