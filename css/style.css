@@ -179,3 +179,41 @@ h5 {
   background-color: #1f2020;
   box-shadow: 0px 7px 18px -1px rgba(0, 0, 0, 0.71);
 }
+
+.about__skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__skill {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  list-style-type: none;
+  background: #eee;
+  color: #666;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.skills-showcase__list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.skills-showcase__list-item {
+  padding: 3rem;
+  border-radius: 5px;
+  background: #262827;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.skills-showcase__list-item i {
+  color: rgba(var(--themeColor), 1);
+  color: #1eb871;
+  font-size: 5rem;
+}
