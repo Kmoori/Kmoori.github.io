@@ -9,6 +9,18 @@ body {
 }
 
 
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), #1eb871, rgba(0, 0, 0, 0.75));
+}
+
+h5 {
+  margin-top: 15px;
+}
+
+/* Navbar */
+
 header {
   position: fixed;
   top: 0;
@@ -18,7 +30,7 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  padding: 20px 100px;
+  padding: 20px 5%;
   z-index: 100000;
 }
 
@@ -30,15 +42,20 @@ header ul {
   list-style-type: none;
 }
 
-header.sticky{
-  padding: 5px 100px;
+header.sticky {
+  padding: 20px 5%;
   background: rgba(0, 0, 0, 0.65);
 }
 
-header.sticky ul li a{
+header.sticky ul li a {
   color: white;
 }
 
+@media (max-width: 991px) {
+  header ul {
+    align-items: baseline;
+  }
+}
 
 .navbar-custom {
   box-shadow: none;
@@ -62,6 +79,7 @@ header.sticky ul li a{
   color: #1eb871;
 }
 
+/* Banner section */
 .banner {
   background: url("../img/keyboard-g2b6b6f66d_1920.jpg") center center no-repeat;
   -webkit-background-size: cover;
@@ -80,7 +98,6 @@ header.sticky ul li a{
   padding: 80px;
 }
 
-
 .main {
   color: #1eb871;
 }
@@ -91,11 +108,7 @@ header.sticky ul li a{
   height: 30%;
 }
 
-hr.style-two {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), #1eb871, rgba(0, 0, 0, 0.75));
-}
+/* Banner section */
 
 .project-bg-img {
   border-radius: 25px;
@@ -112,9 +125,51 @@ hr.style-two {
   width: auto;
 }
 
-.center{
+.center {
   justify-content: center;
 }
+
+.about-me {
+  padding: 0;
+  font-size: 110%;
+}
+
+
+
+/* About section */
+
+.about__skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+#about-text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about__skill {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  list-style-type: none;
+  background: #1eb871;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #1f2020;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all .2s ease-in-out;
+}
+
+.about__skill:hover {
+  transform: scale(1.2);
+}
+
+/* Projects section */
 
 .project-button {
   background-color: rgba(0, 0, 0, 0);
@@ -155,6 +210,7 @@ hr.style-two {
   color: #1f2020;
 }
 
+/* Contact section */
 
 #contact .icons:hover {
   color: #1f2020;
@@ -171,49 +227,8 @@ hr.style-two {
   margin-bottom: 25px;
 }
 
-h5 {
-  margin-top: 15px;
-}
 
 .page-footer {
   background-color: #1f2020;
   box-shadow: 0px 7px 18px -1px rgba(0, 0, 0, 0.71);
-}
-
-.about__skills {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.about__skill {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 1.5rem 2rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  list-style-type: none;
-  background: #eee;
-  color: #666;
-  border-radius: 5px;
-  font-weight: 500;
-}
-
-.skills-showcase__list {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-.skills-showcase__list-item {
-  padding: 3rem;
-  border-radius: 5px;
-  background: #262827;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.skills-showcase__list-item i {
-  color: rgba(var(--themeColor), 1);
-  color: #1eb871;
-  font-size: 5rem;
 }
